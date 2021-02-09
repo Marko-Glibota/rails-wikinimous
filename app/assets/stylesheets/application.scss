@@ -1,0 +1,91 @@
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+.header {
+  height: 90px;
+  background-color: #2E0927;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.my-link {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.my-link:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  border: solid 1px grey;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+li:hover, li:hover i {
+  background-color: #04756F;
+  border: solid 1px #04756F;
+  color: white;
+}
+
+.btn-purple {
+  background-color: #2E0927;
+  border-radius: 3px;
+  color: white;
+  padding: 10px 25px;
+}
+
+.btn-purple:hover {
+  background-color: #2e0927cf;
+  text-decoration: none;
+  color: white;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #2E0927;
+}
+
+.title:hover {
+  color: white;
+  text-decoration: none;
+}
+
+h1 {
+  color: #D90000;
+  font-size: 52px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+i {
+  color: #D90000;
+  padding-right: 15px;
+}

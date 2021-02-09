@@ -10,6 +10,10 @@
   </head>
 
   <body>
+    <div class="header">
+      <p><%= link_to "Wikimarkus", articles_path, class: 'my-link' %></p>
+      <p><%= link_to "New article", new_article_path, class: 'my-link' %></p>
+    </div>
     <%= yield %>
   </body>
 </html>
