@@ -31,6 +31,7 @@
 
 ul {
   list-style: none;
+  padding-left: 0;
 }
 
 li {
@@ -53,12 +54,26 @@ li:hover, li:hover i {
   border-radius: 3px;
   color: white;
   padding: 10px 25px;
+  border-width: 0px;
 }
 
 .btn-purple:hover {
   background-color: #2e0927cf;
   text-decoration: none;
   color: white;
+}
+
+.btn-white {
+  background-color: white;
+  border-radius: 3px;
+  color: #2E0927;
+  padding: 10px 25px;
+  border: 1px solid #2E0927;
+}
+
+.btn-white:hover {
+  text-decoration: none;
+  color: #2E0927;
 }
 
 .title {
@@ -88,4 +103,11 @@ h1 {
 i {
   color: #D90000;
   padding-right: 15px;
+}
+
+.align {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 75px;
 }

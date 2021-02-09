@@ -1,11 +1,15 @@
-<h1><%= @article.title %></h1>
+<div class="container">
+  <h1><%= @article.title %></h1>
 
-<p><%= @article.content %></p>
+  <p><%= @article.content %></p>
 
-<p><%= link_to "Edit the article", edit_article_path(@article) %></p>
-<p><%= link_to "Back to the list", articles_path %></p>
+  <div class="align">
+    <p><%= link_to "Back to the list", articles_path, class: 'btn-purple'%></p>
+    <p><%= link_to "Edit the article", edit_article_path(@article), class: 'btn-white'%></p>
 
-<%= link_to "Delete #{@article.title}",
-              article_path(@article),
-              method: :delete,
-              data: { confirm: "Are you sure?" } %>
+    <%= link_to "Delete #{@article.title}",
+                  article_path(@article),
+                  method: :delete,
+                  data: { confirm: "Are you sure?" }, class: 'btn-white' %>
+  </div>
+</div>
